@@ -6,6 +6,7 @@
         <title>Absensi</title>
     </head>
     <body>
+        <form>
         <h1>Absensi Kelas</h1>
         <label for="nama">Nama:</label>
         <br><input id="nama" type="text">
@@ -21,14 +22,20 @@
         <label for="Address">Alamat:</label>
         <br><input id="nama" type="text">
         <div>
-        <p><label for="kehadiran">Kehadiran</label>
-        <br><input type="radio" name="kehadiran" value="Hadir" required />
+        <p>Kehadiran</p>
+        <input type="radio" name="kehadiran" value="Hadir" required />
       			Hadir
-      		<br><input type="radio" name="kehadiran" value="Izin" required />
+      		<input type="radio" name="kehadiran" value="Izin" required />
       			Izin
                 </div>
         <br><textarea rows="4" cols="50" placeholder="Alasan izin"></textarea></br>
         <br><button type="submit">Submit</button>
-        <br><button type="reset">Ulang</button>
+        <br><button type="reset" onclick="resetForm()">Ulang</button>
+        </form>
+        <script>
+                function resetForm(){
+                        document.getElementById("guestForm").reset();
+                }
+        </script>
 
     </body>
