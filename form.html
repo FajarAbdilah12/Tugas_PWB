@@ -19,16 +19,24 @@
 
         <p><label for="age">Umur:</label>
         <br><input type="number" id="age" name="age"/></p>
-        <label for="Address">Alamat:</label>
-        <br><input id="nama" type="text">
+            
+        <p><label for="Address">Alamat:</label>
+        <br><input id="Address" type="text"></p>
+            
         <div>
-        <p>Kehadiran</p>
-        <input type="radio" name="kehadiran" value="Hadir" required />
+        <p>Kehadiran
+        <br><input type="radio" name="kehadiran" value="Hadir" required />
       			Hadir
-      		<input type="radio" name="kehadiran" value="Izin" required />
+      	<br><input type="radio" name="kehadiran" value="Izin" required />
       			Izin
+        <br><input type="radio" name="kehadiran" value="sakit" required />
+      			sakit</p>
                 </div>
-        <br><textarea rows="4" cols="50" placeholder="Alasan izin"></textarea></br>
+        <p>
+            <label for="alasan">Alasan Izin:</label>
+            <br><textarea rows="4" cols="50" placeholder="Alasan izin"></textarea></br>
+        </p>
+            
         <br><button type="submit">Submit</button>
         <br><button type="reset" onclick="resetForm()">Ulang</button>
         </form>
