@@ -4,27 +4,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Absensi</title>
+        <style>
+            body{
+                background-color: #7EAA92;
+                display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    background: linear-gradient(to bottom, white, #aac8a7, white ); ;
+    text-align: justify;
+    border: 2px solid #7EAA92;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+}
+    
+    h1{
+        text-align: center;
+    }
+
+    button {
+    background-color: #aac8a7;
+    color: black;
+    font-size: 14px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 2px;
+    text-align: center;
+    }
+
+    label{
+        font-weight: bold;
+    }
+
+    
+
+        </style>
     </head>
-    <style>
-        body{
-       background-color: #7EAA92;
-       font-family: sans-serif;
-        }
-    </style>
     <body>
-        <form action="welcome.html" method="post">
+        <form action="tabel.html" method="post">
         <h1>Absensi Kelas</h1>
         <label for="nama">Nama:</label>
-        <br><input id="nama" type="text" required/>
+        <input id="nama" type="text" required/>
 
-        <p><label for="gender">Jenis Kelamin:
-        <br><input type="radio" id="male" name="gender" value="male" required/>
-        <label for="male">Laki-laki</label>
-        <br><input type="radio" id="female" name="gender" value="female" required/>
-        <label for="female">Perempuan</label></p>
+        <p><label for="gender">Jenis Kelamin:</label>
+        <input type="radio" id="male" name="gender" value="male" required/>
+         Laki-laki
+        <input type="radio" id="female" name="gender" value="female" required/>
+         Perempuan
+        </p>
 
-        <p>Jurusan:
-        <br><select name:"Jurusan">
+        <p><label for="Jurusan">Jurusan:</label>
+        <select name="Jurusan">
             <option value="DPIB">DPIB</option>
             <option value="RPL">RPL</option>
             <option value="TBSM">TBSM</option>
@@ -37,52 +73,52 @@
             <option value="TEI">TEI</option>
         </select></p>
 
-        <p>Kelas:
-        <br><select id="kelas" name="kelas">
+        <p><label for="kelas">Kelas:
+        <select id="kelas" name="kelas">
         <option value="10">X/10</option>
         <option value="11">XI/11</option>
         <option value="12">XII/12</option></select></p>
             
         <p><label for="age">Umur:</label>
-        <br><input type="number" id="age" name="age"/></p>
+        <input type="number" id="age" name="age"/></p>
             
         <p><label for="Address">Alamat:</label>
-        <br><input id="Address" type="text"></p>
+        <input id="Address" type="text"></p>
             
         <div>
-        <p>Kehadiran
-        <br><input type="radio" name="kehadiran" value="Hadir" required />
+        <p><label for="kehadiran">Kehadiran:</label>
+        <input type="radio" name="kehadiran" value="Hadir" required />
       		Hadir
-      	<br><input type="radio" name="kehadiran" value="Izin" required />
+      	<input type="radio" name="kehadiran" value="Izin" required />
       		Izin
-        <br><input type="radio" name="kehadiran" value="Sakit" required />
+        <input type="radio" name="kehadiran" value="Sakit" required />
       		Sakit</p>
         </div>
 
         <p>
-            Izin pada jam pelajaran ke:
+            <label for="jam">Pada jam pelajaran ke:</label> 
             <br><input type="checkbox" name="1"> 1
-            <br><input type="checkbox" name="2"> 2
-            <br><input type="checkbox" name="3"> 3
-            <br><input type="checkbox" name="4"> 4
-            <br><input type="checkbox" name="5"> 5
-            <br><input type="checkbox" name="6"> 6
-            <br><input type="checkbox" name="7"> 7
-            <br><input type="checkbox" name="8"> 8
-            <br><input type="checkbox" name="9"> 9
-            <br><input type="checkbox" name="10"> 10
+            <input type="checkbox" name="2"> 2
+            <input type="checkbox" name="3"> 3
+            <input type="checkbox" name="4"> 4
+            <input type="checkbox" name="5"> 5
+            <input type="checkbox" name="6"> 6
+            <input type="checkbox" name="7"> 7
+            <input type="checkbox" name="8"> 8
+            <input type="checkbox" name="9"> 9
+            <input type="checkbox" name="10"> 10
         </p>
                 
         <p>
             <label for="alasan">Alasan Izin:</label>
-            <br><textarea rows="4" cols="50" placeholder="Alasan izin"></textarea></br>
+            <br><textarea rows="4" cols="50" placeholder="Tuliskan alasan izin"></textarea></br>
         </p>
-        <br><button type="reset" onclick="resetForm()">Ulang</button>
+
+        <button type="reset">Ulang</button>
+        <button type="submit">Submit</button> 
+        <a href="welcome.html"><button type="button">Kembali</button></a>
+        
     </form>
-          <a href="tabel.html"><button type="submit">KIRIM</button></a>
-        <script>
-            function resetForm(){
-                document.getElementById("guestForm").reset();
-            }
-        </script>
+   
+    
     </body>
