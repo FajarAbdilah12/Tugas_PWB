@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
+<style>
+  button {
+    background-color: #aac8a7;
+    color: black;
+    font-size: 14px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 2px;
+    text-align: center;
+</style>
+
 <body>
-    <form action="welcome.html" method="post">
-        <div class="login">
-        <h1><strong>LOGIN</strong></h1>
-        <br>
-        <div><label for="username" id="user">Username/Email</label></div>
-        <div><input type="text" id="username" required></div>
-        <br>
-        <div><label for="password" id="pass">Password</label></div>
-        <div><input type="password" id="password" required></div>
-        <div><button href="welcome.html">Sign Up</button></div>
-        </div>
-    </form>
+  <form action="welcome.html" method="post">
+    <div class="login">
+      <h1><strong>LOGIN</strong></h1>
+      <br>
+      <div><label for="username" id="user">Username/Email</label></div>
+      <div><input type="text" id="username" required></div>
+      <br>
+      <div><label for="password" id="pass">Password</label></div>
+      <div><input type="password" id="password" required></div>
+      <br>
+      <a href="welcome.html"><button
+          style="padding: 10px 15px; border-radius: 20px; border: none; background: #ecd6c9; color: #17594A; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
+          type="button">Sign Up</button></a></a>
+    </div>
+  </form>
 </body>
+
 </html>
