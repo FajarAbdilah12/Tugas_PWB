@@ -1,82 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Absensi</title>
-    </head>
-    <body>
-        <form action="welcome.html" method="post">
-        <h1>Absensi Kelas</h1>
-        <label for="nama">Nama:</label>
-        <br><input id="nama" type="text" required/>
-
-        <p><label for="gender">Jenis Kelamin:
-        <br><input type="radio" id="male" name="gender" value="male" required/>
-        <label for="male">Laki-laki</label>
-        <br><input type="radio" id="female" name="gender" value="female" required/>
-        <label for="female">Perempuan</label></p>
-
-        <p>Jurusan:
-        <br><select name:"Jurusan">
-            <option value="DPIB">DPIB</option>
-            <option value="RPL">RPL</option>
-            <option value="TBSM">TBSM</option>
-            <option value="TKRO">TKRO</option>
-            <option value="TP">TP</option>
-            <option value="TKJ">TKJ</option>
-            <option value="TK">TK</option>
-            <option value="DGM">DGM</option>
-            <option value="TPL">TPL</option>
-            <option value="TEI">TEI</option>
-        </select></p>
-
-        <p>Kelas:
-        <br><select id="kelas" name="kelas">
-        <option value="10">X/10</option>
-        <option value="11">XI/11</option>
-        <option value="12">XII/12</option></select></p>
-            
-        <p><label for="age">Umur:</label>
-        <br><input type="number" id="age" name="age"/></p>
-            
-        <p><label for="Address">Alamat:</label>
-        <br><input id="Address" type="text"></p>
-            
-        <div>
-        <p>Kehadiran
-        <br><input type="radio" name="kehadiran" value="Hadir" required />
-      		Hadir
-      	<br><input type="radio" name="kehadiran" value="Izin" required />
-      		Izin
-        <br><input type="radio" name="kehadiran" value="Sakit" required />
-      		Sakit</p>
-        </div>
-
-        <p>
-            Izin pada jam pelajaran ke:
-            <br><input type="checkbox" name="1"> 1
-            <br><input type="checkbox" name="2"> 2
-            <br><input type="checkbox" name="3"> 3
-            <br><input type="checkbox" name="4"> 4
-            <br><input type="checkbox" name="5"> 5
-            <br><input type="checkbox" name="6"> 6
-            <br><input type="checkbox" name="7"> 7
-            <br><input type="checkbox" name="8"> 8
-            <br><input type="checkbox" name="9"> 9
-            <br><input type="checkbox" name="10"> 10
-        </p>
-                
-        <p>
-            <label for="alasan">Alasan Izin:</label>
-            <br><textarea rows="4" cols="50" placeholder="Alasan izin"></textarea></br>
-        </p>
-            <a href="tabel.html"><button type="submit">KIRIM</button></a>
-        <br><button type="reset" onclick="resetForm()">Ulang</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang!</title>
+</head>
+<style>
+    h1{text-align: center;}
+    div{text-align: center;}
+</style>
+<body style="background-color: #7EAA92; text-align: center;">
+    <form id="choose">
+    <h1 style="color: #F8F0E5; font-family: Arial, Helvetica, sans-serif;">Selamat Datang!</h1>
+    <a href="form.html"><button style="padding: 10px 15px; border-radius: 20px; border: none; background: #ecd6c9; color: #17594A; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" type="submit">ISI FORM</button></a>
+    <a href="login.html"><button style="padding: 10px 15px; border-radius: 20px; border: none; background: #ecd6c9; color: #17594A; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" type="submit">KEMBALI</button></a>
+    <a href="tabel.html"><button style="padding: 10px 15px; border-radius: 20px; border: none; background: #ecd6c9; color: #17594A; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" type="submit">TABEL</button></a>
     </form>
-        <script>
-            function resetForm(){
-                document.getElementById("guestForm").reset();
-            }
-        </script>
-    </body>
+    <br><img id="pict" src="https://imgur.com/4n5pI8g.png" width="200px" >
+</body>
+</html>
