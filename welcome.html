@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Selamat Datang!</title>
 </head>
-
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>
 <!--CSS Inline-->
 <body style="background-color: #7EAA92; text-align: center;">
-    <form id="choose">
+    <div class="d-flex justify-content-center align-items-center">
+    <form>
     <h1 style="color: #F8F0E5; font-family: Arial, Helvetica, sans-serif;">Selamat Datang!</h1>
-    <a href="form.html"><button style="padding: 10px 15px; border-radius: 20px; border: none; background: #ecd6c9; color: #17594A; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" type="button">ISI FORM</button></a>
-    <a href="login.html"><button style="padding: 10px 15px; border-radius: 20px; border: none; background: #ecd6c9; color: #17594A; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" type="button">KEMBALI</button></a>
-    <a href="tabel.html"><button style="padding: 10px 15px; border-radius: 20px; border: none; background: #ecd6c9; color: #17594A; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" type="button">TABEL</button></a>
+    <a href="form.html"><button type="button" class="btn btn-success">ISI FORM</button></a>
+    <a href="login.html"><button type="button" class="btn btn-success">KEMBALI</button></a>
+    <a href="tabel.html"><button type="button" class="btn btn-success">TABEL</button></a>
     </form>
     <br><img id="pict" src="https://imgur.com/4n5pI8g.png" width="200px" >
+</div>
 </body>
 </html>
